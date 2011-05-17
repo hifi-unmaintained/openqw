@@ -1,0 +1,20 @@
+Everything is based on the OpenQuartz data if not said otherwise. OpenQuartz was GPL
+and invidual file history can be tracked from the SourceForge CVS repository.
+
+Also everything should be GPL if not said otherwise. GPL incompatible content will
+be replaced with a proper substitute if such content would be imported.
+
+File				License & Author
+------------------------------------------------
+maps/*.map			GPL, John Romero's 2006 release
+maps/gfx/openarena/		GPL, OpenArena project (modified)
+maps/gfx/openqw/		GPL, original work
+gfx/conchars.png		GPL, OQPlus (modified)
+gfx/conback.png			GPL, OQPlus (modified)
+progs/v_*.mdl			GPL, OQPlus (except v_axe is from OQ)
+progs/g_*.mdl			GPL, OQPlus (except g_nail2? and g_rock? are from OQ)
+progs/missile.mdl		GPL, OQPlus
+progs/grenade.mdl		GPL, OQPlus
+progs/spike.mdl			GPL, OQPlus
+progs/s_spike.mdl		GPL, OQPlus
+qw/				GPL, original QW source with custom progs.src for QCC
