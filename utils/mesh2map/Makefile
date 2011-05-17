@@ -4,7 +4,7 @@ $(TARGET) : mesh2map.c
 ifeq "$(wildcard ../bin)" ""
 	mkdir $(dir $@)
 endif
-	$(CC) -o $@ -O2 -lm -Wall $^
+	$(CC) -o $@ -O2 -Wall $^ -lm
 
 clean :
 	$(RM) $(TARGET)
