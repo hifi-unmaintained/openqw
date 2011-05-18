@@ -12,6 +12,7 @@ QLUMPY   = $(QUTILSDIR)/qlumpy
 QFILES   = $(QUTILSDIR)/qfiles
 
 PAR      = $(UTILSDIR)/par
+GIT_REV  = $(shell git rev-parse --short HEAD)
 
 # top-level targets
 ALLPAKS  = pak0.pak pak1.pak
@@ -22,8 +23,14 @@ all: qwprogs.dat $(ALLPAKS) install
 install :
 	mkdir -p $(GAMEDIR)/id1
 	mkdir -p $(GAMEDIR)/qw
+	cp COPYING README SOURCES $(GAMEDIR)/id1
+	cp -r docs $(GAMEDIR)/id1
 	cp $(ALLPAKS) $(GAMEDIR)/id1
 	cp qwprogs.dat $(GAMEDIR)/qw
+
+package: all
+	rm -f openqw-$(GIT_REV).zip
+	zip -r openqw-$(GIT_REV).zip release/
 
 # be careful, don't erase anything we can't generate
 clean:
@@ -40,6 +47,10 @@ clean:
 	$(RM) $(addprefix progs/,bolt.mdl bolt2.mdl bolt3.mdl)
 	$(RM) $(addprefix progs/,h_player.mdl)
 	$(RM) $(addprefix progs/,s_bubble.spr s_explod.spr s_light.spr)
+
+distclean: clean
+	$(RM) openqw-*.zip
+	$(RM) -r release
 
 #
 # PAK0_CONTENTS is what goes into pak0.pak
