@@ -1,4 +1,4 @@
-TARGETS = ../bin/png2tex
+TARGETS = ../bin/img2tex
 
 all: $(TARGETS)
 

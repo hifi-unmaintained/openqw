@@ -10,7 +10,7 @@ PROJECTS += qutils
 PROJECTS += toon
 PROJECTS += tri2map
 PROJECTS += tyrlite
-PROJECTS += png2tex
+PROJECTS += img2tex
 
 .PHONY : $(PROJECTS)
 
