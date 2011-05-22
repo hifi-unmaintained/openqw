@@ -8,6 +8,7 @@ File				License & Author
 ------------------------------------------------
 maps/*.map			GPL, John Romero's 2006 release
 maps/gfx/openarena/		GPL, OpenArena project (modified)
+maps/gfx/freedoom/		GPL, freedoom project (modified)
 maps/gfx/openqw/		GPL, original work
 gfx/conchars.png		GPL, OQPlus (modified)
 gfx/conback.png			GPL, OQPlus (modified)
