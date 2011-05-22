@@ -172,7 +172,7 @@ PAK0_CONTENTS += progs/h_player.mdl
 #PAK0_CONTENTS += progs/h_wizard.mdl
 #PAK0_CONTENTS += progs/h_zombie.mdl
 PAK0_CONTENTS += progs/invisibl.mdl
-#PAK0_CONTENTS += progs/invulner.mdl
+PAK0_CONTENTS += progs/invulner.mdl
 #PAK0_CONTENTS += progs/knight.mdl
 PAK0_CONTENTS += progs/lavaball.mdl
 #PAK0_CONTENTS += progs/m_g_key.mdl
@@ -505,6 +505,12 @@ maps/gfx/items.wad : maps/gfx/items_wad.ls
 maps/gfx/medieval.wad : maps/gfx/medieval_wad.ls
 	$(QLUMPY) maps/gfx/medieval_wad.ls
 
+maps/gfx/metal.wad : maps/gfx/metal_wad.ls
+	$(QLUMPY) maps/gfx/metal_wad.ls
+
+maps/gfx/base.wad : maps/gfx/base_wad.ls
+	$(QLUMPY) maps/gfx/base_wad.ls
+
 maps/gfx/tim.wad : maps/gfx/tim_wad.ls
 	$(QLUMPY) maps/gfx/tim_wad.ls
 
@@ -544,8 +550,38 @@ maps/dm1.bsp : maps/dm1.map maps/gfx/medieval.wad
 	$(VIS) $@
 	$(LIGHT) $@
 
+maps/dm2.bsp : maps/dm2.map maps/gfx/metal.wad
+	$(QBSP) maps/dm2.map
+	$(VIS) $@
+	$(LIGHT) $@
+
+maps/dm3.bsp : maps/dm3.map maps/gfx/base.wad
+	$(QBSP) maps/dm3.map
+	$(VIS) $@
+	$(LIGHT) $@
+
+maps/dm4.bsp : maps/dm4.map maps/gfx/metal.wad
+	$(QBSP) maps/dm4.map
+	$(VIS) $@
+	$(LIGHT) $@
+
+maps/dm5.bsp : maps/dm5.map maps/gfx/medieval.wad
+	$(QBSP) maps/dm5.map
+	$(VIS) $@
+	$(LIGHT) $@
+
 maps/dm6.bsp : maps/dm6.map maps/gfx/tim.wad
 	$(QBSP) maps/dm6.map
+	$(VIS) $@
+	$(LIGHT) $@
+
+maps/dm7.bsp : maps/dm7.map maps/gfx/metal.wad
+	$(QBSP) maps/dm7.map
+	$(VIS) $@
+	$(LIGHT) $@
+
+maps/dm8.bsp : maps/dm8.map maps/gfx/base.wad
+	$(QBSP) maps/dm8.map
 	$(VIS) $@
 	$(LIGHT) $@
 
