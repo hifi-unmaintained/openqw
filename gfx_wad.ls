@@ -1,6 +1,6 @@
-$dest gfx.wad
+$dest "./gfx.wad"
 
-$load gfx/numbers.png
+$load "./gfx/numbers.png"
 ANUM_0		qpic	0	0	24 24
 ANUM_1		qpic	24	0	24 24
 ANUM_2		qpic	48	0	24 24
@@ -27,16 +27,16 @@ NUM_COLON	qpic	240	24	24 24
 NUM_MINUS	qpic	264	24	24 24
 NUM_SLASH	qpic	288	24	24 24
 
-$load gfx/backtile.png
+$load "./gfx/backtile.png"
 BACKTILE	qpic	0	0	64	64
 
-$load gfx/conchars.png
+$load "./gfx/conchars.png"
 CONCHARS	raw		0	0	128	128
 
-$load gfx/disc.png
+$load "./gfx/disc.png"
 DISC		qpic	0	0	24	24
 
-$load gfx/faces.png
+$load "./gfx/faces.png"
 FACE1		qpic	0	0	24	24
 FACE2		qpic	24	0	24	24
 FACE3		qpic	48	0	24	24
@@ -52,7 +52,7 @@ FACE_INVIS	qpic	48	24	24	24
 FACE_INVUL2	qpic	72	24	24	24
 FACE_QUAD	qpic	96	24	24	24
 
-$load gfx/bar.png
+$load "./gfx/bar.png"
 IBAR			qpic	0	0	320	24
 SBAR			qpic	0	88	320	24
 SCOREBAR		qpic	0	136	320	24
@@ -168,11 +168,11 @@ SB_NAILS		qpic	248	112	24	24
 SB_ROCKET		qpic	272	112	24	24
 SB_SHELLS		qpic	296	112	24	24
 
-$load gfx/net.png
+$load "./gfx/net.png"
 NET			qpic	0	0	32	32
 
-$load gfx/ram.png
+$load "./gfx/ram.png"
 RAM			qpic	0	0	32	32
 
-$load gfx/turtle.png
+$load "./gfx/turtle.png"
 TURTLE		qpic	0	0	32	32
